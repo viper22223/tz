@@ -46,98 +46,155 @@ if (isset($_POST['phone_number'])) {
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Определение страны по номеру телефона</title>
-    <link rel="stylesheet" href="style/main.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Определение страны по номеру телефона</title>
+        <link rel="stylesheet" href="style/main.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous">
+    </head>
 
-<body>
-    
-    <div class="container">
-    <h2>Определение страны по номеру телефона</h2>
-    <form method="post">
-        <div class="row mt-3">
-       
-            <div class="col-md-6">
-              <input type="text" id="phone_number" class="form-control"  name="phone_number" value="<?php echo $phoneNumber; ?>" placeholder="Введите номер телефона">
+    <body>
+        <div class="container">
+            <h2 class="title">Korzyści ze współpracy z nami</h2>
+            <div class="row">
+                <div class=" col-xs-12 col-sm-12 col-md-3 mbb">
+                    <div class="imcard w-90">
+                        <div class="icons ">
+                            <img src="/assets/box.svg" alt="">
+                        </div>
+                        <div class="desc">
+                            <p>Przechowywanie towarów ponadgabarytowych</p>
+                        </div>
+                        <span class="water">Opis</span>
+                    </div>
+                </div>
+                <div class=" col-xs-12 col-sm-12 col-md-3 mbb">
+                    <div class="imcard w-90">
+                        <div class="icons ">
+                            <img src="/assets/por2.svg" alt="">
+                        </div>
+                        <div class="desc">
+                            <p>Elastyczne warunki współpracy</p>
+                        </div>
+                        <span class="water">Opis</span>
+                    </div>
+                </div>
+                <div class=" col-xs-12 col-sm-12 col-md-3 mbb">
+                    <div class="imcard w-90">
+                        <div class="icons ">
+                            <img src="/assets/site3.svg" alt="">
+                        </div>
+                        <div class="desc">
+                            <p>Integracja i zarządzanie zamówieniami</p>
+                        </div>
+                        <span class="water">Opis</span>
+                    </div>
+                </div>
+                <div class=" col-xs-12 col-sm-12 col-md-3 mbb">
+                    <div class="imcard w-90">
+                        <div class="icons ">
+                            <img src="/assets/job4.svg" alt="">
+                        </div>
+                        <div class="desc">
+                            <p>Wysyłka zamówień w dniu kompletacji</p>
+                        </div>
+                        <span class="water">Opis</span>
+                    </div>
+                </div>
+                <div class=" col-xs-12 col-sm-12 col-md-3 mbb">
+                    <div class="imcard w-90">
+                        <div class="icons ">
+                            <img src="/assets/mon5.svg" alt="">
+                        </div>
+                        <div class="desc">
+                            <p>Niskie koszty dostawy</p>
+                        </div>
+                        <span class="water">Opis</span>
+                    </div>
+                </div>
+                <div class=" col-xs-12 col-sm-12 col-md-3 mbb">
+                    <div class="imcard w-90">
+                        <div class="icons ">
+                            <img src="/assets/ref6.svg" alt="">
+                        </div>
+                        <div class="desc">
+                            <p>Gwarancja bezpieczeństwa towarów</p>
+                        </div>
+                        <span class="water">Opis</span>
+                    </div>
+                </div>
+                <div class=" col-xs-12 col-sm-12 col-md-3 mbb">
+                    <div class="imcard w-90">
+                        <div class="icons ">
+                            <img src="/assets/cam7.svg" alt="">
+                        </div>
+                        <div class="desc">
+                            <p>Całodobowy wideo monitoring</p>
+                        </div>
+                        <span class="water">Opis</span>
+                    </div>
+                </div>
+                <div class=" col-xs-12 col-sm-12 col-md-3 mbb">
+                    <div class="imcard w-90">
+                        <div class="icons ">
+                            <img src="/assets/wor8.svg" alt="">
+                        </div>
+                        <div class="desc">
+                            <p>Wysyłka zamówień do różnych krajów</p>
+                        </div>
+                        <span class="water">Opis</span>
+                    </div>
+                </div>
+
             </div>
-        <div class="col-md-6">
-         <input type="submit" class="btn btn-success"value="Определить страну">
         </div>
-        
-        <div class="col-md-12 mt-3">
-        <?php echo $result; ?>
-    </div>
+        <hr>
+        <div class="container">
+            <h2 class="title">Определение страны по номеру телефона</h2>
+            <form method="post">
+
+                <div class="card p-5">
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <input
+                                type="text"
+                                id="phone_number"
+                                class="form-control"
+                                name="phone_number"
+                                value="<?php echo $phoneNumber; ?>"
+                                placeholder="Введите номер телефона">
+                        </div>
+                        <div class="col">
+                            <input type="submit" class="btn btn-success" value="Определить страну">
+                        </div>
+
+                        <div class="col-md-12 mt-3">
+                            <?php echo $result; ?>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </form>
+
+        <div class="cookie-popup" id="cookiePopup">
+            <p>На этом сайте используются куки.</p>
+            <button class="btn btn-success" id="acceptCookies">Принять</button>
+            <button class="btn btn-danger" id="closeCookiePopup">Закрыть</button>
         </div>
-        
-    </div>
-    </form>
-    
-   
-    <div class="cookie-popup" id="cookiePopup">
-        <p>На этом сайте используются куки.</p>
-        <button class="btn btn-success" id="acceptCookies">Принять</button>
-        <button class="btn btn-danger" id="closeCookiePopup">Закрыть</button>
-    </div>
-   
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
-<script>
-    // proverka cookies esli 
-    function setCookie(cname, cvalue, exdays) {
-        var d = new Date();
-        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-        var expires = "expires="+d.toUTCString();
-        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-    }
 
-    // poluchenie cookie
-    function getCookie(cname) {
-        var name = cname + "=";
-        var decodedCookie = decodeURIComponent(document.cookie);
-        var ca = decodedCookie.split(';');
-        for(var i = 0; i <ca.length; i++) {
-            var c = ca[i];
-            while (c.charAt(0) == ' ') {
-                c = c.substring(1);
-            }
-            if (c.indexOf(name) == 0) {
-                return c.substring(name.length, c.length);
-            }
-        }
-        return "";
-    }
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+        <script src="js/cookie.js"></script>
 
-    // proveryaem cookie
-    function checkCookie() {
-        var cookiePopup = document.getElementById("cookiePopup");
-        var cookieAccepted = getCookie("cookieAccepted");
-        if (cookieAccepted) {
-            cookiePopup.style.display = "none";
-        } else {
-            cookiePopup.style.display = "block";
-        }
-    }
-
-    // zakrivaem i ochishaaem
-    document.getElementById("closeCookiePopup").addEventListener("click", function() {
-        setCookie("cookieAccepted", "", 1); 
-        document.getElementById("cookiePopup").style.display = "none";
-    });
-
-    // prinimaem
-    document.getElementById("acceptCookies").addEventListener("click", function() {
-        setCookie("cookieAccepted", true, 1);
-        document.getElementById("cookiePopup").style.display = "none";
-    });
-
-    // proverka cookie 
-    window.onload = checkCookie;
-</script>
-
-</body>
+    </body>
 
 </html>
