@@ -1,5 +1,5 @@
 <?php
-// Загрузка данных JSON
+// download json`
 $json_url = 'https://cdn.jsdelivr.net/gh/andr-04/inputmask-multi@master/data/phone-codes.json';
 $json = file_get_contents($json_url);
 $countries = json_decode($json, true);
